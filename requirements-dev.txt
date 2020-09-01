@@ -1,6 +1,8 @@
+autoflake
 black
 coverage
 flake8
 isort>=5.4.2
 mypy
+pydocstyle
 pytest
