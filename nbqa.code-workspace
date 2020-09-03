@@ -53,20 +53,20 @@
     "python.testing.pytestEnabled": true,
     "python.testing.pytestPath": "pytest",
     "python.testing.pytestArgs": ["tests"],
-    "emeraldwalk.runonsave": {
-      "commands": [
-        {
-          "match": "\\.py$",
-          "cmd": "pipenv run isort '${file}'",
-          "isAsync": false
-        },
-        {
-          "match": "\\.py$",
-          "cmd": "pipenv run autoflake -i --remove-all-unused-imports '${file}'",
-          "isAsync": false
-        }
-      ]
-    },
+    // "emeraldwalk.runonsave": {
+    //   "commands": [
+    //     {
+    //       "match": "\\.py$",
+    //       "cmd": "isort '${file}'",
+    //       "isAsync": false
+    //     },
+    //     {
+    //       "match": "\\.py$",
+    //       "cmd": "autoflake -i --remove-all-unused-imports '${file}'",
+    //       "isAsync": false
+    //     }
+    //   ]
+    // },
     "restructuredtext.builtDocumentationPath": "${workspaceFolder}/docs/_build/html",
     "restructuredtext.confPath": "${workspaceFolder}/docs",
     "restructuredtext.linter.name": "rstcheck",
