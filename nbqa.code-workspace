@@ -42,7 +42,6 @@
     "python.pythonPath": ".venv/env38/bin/python",
     "python.venvPath": "${workspaceFolder}/.venv/",
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["-l", "100"],
     "python.autoComplete.showAdvancedMembers": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
@@ -53,20 +52,20 @@
     "python.testing.pytestEnabled": true,
     "python.testing.pytestPath": "pytest",
     "python.testing.pytestArgs": ["tests"],
-    // "emeraldwalk.runonsave": {
-    //   "commands": [
-    //     {
-    //       "match": "\\.py$",
-    //       "cmd": "isort '${file}'",
-    //       "isAsync": false
-    //     },
-    //     {
-    //       "match": "\\.py$",
-    //       "cmd": "autoflake -i --remove-all-unused-imports '${file}'",
-    //       "isAsync": false
-    //     }
-    //   ]
-    // },
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.py$",
+          "cmd": "${workspaceFolder}/.venv/env38/bin/isort '${file}'",
+          "isAsync": false
+        },
+        {
+          "match": "\\.py$",
+          "cmd": "${workspaceFolder}/.venv/env38/bin/autoflake -i --remove-all-unused-imports '${file}'",
+          "isAsync": false
+        }
+      ]
+    },
     "restructuredtext.builtDocumentationPath": "${workspaceFolder}/docs/_build/html",
     "restructuredtext.confPath": "${workspaceFolder}/docs",
     "restructuredtext.linter.name": "rstcheck",
