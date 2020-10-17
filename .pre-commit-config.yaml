@@ -23,6 +23,8 @@ repos:
     hooks:
       - id: pylint
         exclude: ^docs/conf.py$
+        additional_dependencies:
+          - "pytest"
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
     hooks:
