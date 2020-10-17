@@ -6,7 +6,7 @@ from typing import Any, Callable, ClassVar, Dict, List, NamedTuple, Optional
 from nbqa.cmdline import CLIArgs
 
 
-class _ConfigSections(NamedTuple):  # pylint: disable=R0903
+class _ConfigSections(NamedTuple):
     """Stores all the config section names."""
 
     ADDOPTS: str = "addopts"
